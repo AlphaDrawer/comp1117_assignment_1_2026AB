@@ -21,7 +21,7 @@ Read it before you start.
 | `Museum.py` | The starter file. It is a skeleton with `???` placeholders that you complete after the worksheet is done. You submit it |
 | `test.py` | Supplied checks. Run them yourself. They are not your test marks |
 | `tests.txt` | Your own test cases, up to ten. It starts with one worked example so you can see the format. Replace it and add your own. You submit it |
-| `History.md` | Your exported AI chat. Export it from the extension. You submit it |
+| Your chat export | Not there yet. Export it from the extension when you finish, and keep the name it gives. You submit it |
 | `assignment.json` | Tells the extension which assignment this folder holds. Leave it alone |
 
 ## What you need
@@ -108,6 +108,11 @@ See How this is graded in the brief for the marks each part carries.
 - Do not change `test.py`, the brief, or the output format `Museum.py` requires.
 - Your worksheet, your code, your test cases and your chat must be your own.
   See Academic integrity in the brief.
-- Never put a password, a student number or an API key in a file you submit.
-- Your chat history must be a truthful record of how you worked. Do not edit it
-  afterwards.
+- Keep passwords, your student number and API keys out of the chat, out of any
+  file the assistant reads, and out of anything you commit to Git. See Tips in
+  the brief.
+- Your chat history must be a truthful record of how you worked. Export it
+  complete and do not edit it afterwards.
+- Attacking the assistant or the systems it runs on, including prompt
+  injection and using another AI tool to write attack prompts, is covered in
+  Academic integrity in the brief.

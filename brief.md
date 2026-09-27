@@ -14,7 +14,8 @@ the supplied checks `test.py` and your own test cases against values you
 predicted by hand. You must understand and be able to explain every part.
 
 You submit four things: the program, your test cases, `Specifications.md`
-and your full chat transcript `History.md`. See How this is graded below.
+and your full chat transcript, exported from the extension. See How this
+is graded below.
 
 ## Description
 
@@ -172,6 +173,14 @@ print("Total cost:", "{:.2f}".format(x))
 
 "{:.2f}" always shows exactly two decimals whether x was a whole number or a long decimal, so it fixes both cases at once. Use the same approach for the discount and the service fee.
 
+### Keeping personal details private
+
+
+Everything you send the course AI assistant is recorded by the course and sent to an outside AI service to be processed. Do not type or paste a password, your student number or an API key into the chat, and do not put one in a file the assistant reads.
+
+
+If you push your copy of the assignment to GitHub, the same goes for anything you commit. A committed file stays in the repository's history even after you delete it, so deleting it later does not take it back.
+
 ## Testing your program
 
 
@@ -221,7 +230,7 @@ Total cost: 317.50
 ## The AI chat history
 
 
-The AI-usage marks are read from `Specifications.md` and `History.md`
+The AI-usage marks are read from `Specifications.md` and your exported chat
 together: the worksheet is your distilled reasoning, and the chat shows
 that it came before the code, in your own words.
 
@@ -279,6 +288,9 @@ The rubrics below describe each band; the mark for a band is fixed and shared wi
 
 ## Academic integrity
 
+*Updated on 27 September 2026: added the rules on changing the supplied files and on attacking the course AI assistant, and made the chat-history rule say that an exported chat must not be edited at all. That rule applies to chats exported on or after 28 September 2026.*
+
+
 This assignment is designed to be done with an AI tool, so the rules are a little different from a normal "write it yourself" task. Using AI to help you reason, generate code, and debug is not only allowed, it is the point. What still matters is that the work you submit is genuinely yours.
 
 
@@ -292,4 +304,50 @@ This assignment is designed to be done with an AI tool, so the rules are a littl
 - Sharing or copying chat histories, code, or test files with or from another student. Your reasoning and your conversation must be your own. Two submissions with the same chat history or the same test cases will both be treated as a violation.
 
 
-- Submitting a chat history that is not really yours, for example one produced by someone else, or edited afterwards to look like reasoning that did not actually happen. The chat history must be a truthful record of how you worked.
+- Submitting a chat history that is not really yours, for example one produced by someone else. Editing your chat history in any way after it is exported: submit it exactly as the extension exported it, complete and unedited. Renaming the file is not editing it. The chat history must be a truthful record of how you worked.
+
+
+- Changing `test.py`, this brief, or the output format that `Museum.py` must follow.
+
+
+- Attacking the course AI assistant or the systems it runs on, including prompt injection, as set out in the next section.
+
+
+### Attacking the course AI assistant
+
+
+**Not allowed:** any deliberate attempt to attack, subvert or misuse the assistant or the systems it runs on. That includes:
+
+- prompt injection, as defined below;
+
+- trying to make the assistant act outside this assignment: run a command, reach another system, service or account, or change a file, a repository or a setting outside your own assignment folder;
+
+- trying to break into or disrupt the systems the assistant runs on by any route, whether through the assistant or directly, for example over SSH;
+
+- deliberately wasting or overloading the service, for example asking for output whose only purpose is to be as long as possible, or sending a run of messages that has nothing to do with the assignment;
+
+- using another AI tool, a website or another person to write or improve prompts meant to do any of the above, or using prompts of that kind found elsewhere. Sending such a prompt counts the same as writing it yourself.
+
+
+**What prompt injection means here.** Prompt injection is sending the assistant text that is meant to be obeyed as an instruction to the tool itself, rather than read as your message about the assignment, so that it ignores, replaces, reveals or works around the instructions the course gave it. Jailbreaking, which means trying to talk the assistant into doing what it was set up not to do, counts as prompt injection for this assignment.
+
+
+**It does not matter how the text reaches the assistant.** It counts whether you:
+
+- type or paste it into the chat;
+
+- put it in a file the assistant reads, for example a comment in `Museum.py`, a line in `Specifications.md`, or a test case;
+
+- disguise it as something else, such as a system or developer message, a role for the assistant to play, a template, a made-up transcript, or text hidden in characters that do not show on the screen.
+
+
+**Some examples:** telling the assistant to ignore its previous instructions; telling it that it is no longer a tutor, or that the assignment rules no longer apply; asking it to print or reveal its instructions; pasting in text that claims to come from the course staff or from the system.
+
+
+**It also covers text aimed at marking.** Anything in a file you submit that is meant to change how your work is marked, rather than to be part of your answer, is treated the same way.
+
+
+**Attempting it is the violation.** Anything in this section is treated as a breach of academic integrity whether or not it works, and whether you wrote it yourself or got it from somewhere else. The test is what your message is for: a message about the museum program, the rules in this brief or your own code is never an attack on the assistant, however firmly you put it, and arguing with the assistant about the program is part of the assignment.
+
+
+The term prompt injection comes from computer security (see NIST AI 100-2e2025, *Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations*). The definition above is the one this course applies.
