@@ -10,8 +10,15 @@ What the program reads and what it prints, with the type of each value:
 int, float, str, bool. Say why.
 
 - **Inputs:** what values does the program read, and what type is each?
+
+> It firstly reads the day type (interger type, 1-5 = weekday, 6-7 = weekend, 8 = holiday), and reads the visitors' ages respectively (interger type between [0, 80]).
+> 
+> The visitors' count is not given, so we need to use a `while` loop.
+
 - **Outputs:** what does the program print, what type is each value, and
   how are the money values printed?
+
+> It firstly prints the day type. It consists a string ("weekend / weekday / holiday"). Then we need to print the count of different types of people and the total count (integers). Then we need to print the groups formed (integers). In the last, we need to calculate the discount, survice fee and the total cost. It can be integers or floats if discount applied. Since the format of money values are printed in floats (approx. to 2 digits) and for calculation convenience, it is more suitable to store them as floats in the program.
 
 ## The rules in my own words
 
