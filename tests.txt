@@ -184,7 +184,7 @@ Total cost: 160.00
 
 7
 -1
-Day type: holiday
+Day type: weekend
 Children: 0
 Adults: 0
 Seniors: 0
