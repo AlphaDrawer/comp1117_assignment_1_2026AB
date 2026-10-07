@@ -35,24 +35,22 @@ wording pasted back. Work through each part below:
 >
 > Next, we need to add up discount. First, check whether discount can be applied (group_number >= 1, day = weekend or holiday), if possible, calculate the discount. REMEMBER using `float` type to store the number.
 >
-> Then, we need to calculate the service fee. We first check if the day is weekday and there are 3 people or less, then the service fee is 0. Otherwise for each people there will be $5 service fee charged each, the maximum of the service fee is 30.
+> Then, we need to calculate the service fee. We first check if the day is weekday and there are 2 people or less, then the service fee is 0. Otherwise for each people there will be $5 service fee charged each, the maximum of the service fee is 30.
 > 
 > At last we can get the final total cost = the total price of tickets - discount + service fee.
 
 - **Boundaries:** where exactly the behaviour changes as an input changes,
   and what happens on each side.
 
-> First boundary is the group formation. If the (adult_num % 5 == 0), then we can exactly form (adult_num // 5) group(s). However, if the (adult_num % 5 == 4), then 4 of the adults left can not form a new group, in other words, (adult_num // 5) groups can be formed.
+> First boundary is the group formation. If the (adult_num % 5 == 0), then we can exactly form (adult_num // 5) group(s). However, if the (adult_num % 5 == 1 or 2 or 3 or 4), then some of the adults left can not form a new group, in other words, (adult_num // 5) groups can be formed.
 >
-> Second boundary is the age. If the age of a visitor is 12 years old, then this visitor should be recognized as a child. If a visitor is 13 years old or 59 years old, then this visitor should be recognized as an adult. If a visitor is 60 years old, then this visitor should be recognized as an senior.
+> Second boundary is the age. If the age of a visitor is 12 years old, then this visitor should be recognized as a child. If a visitor is from 13 years old to 59 years old, then this visitor should be recognized as an adult. If a visitor is 60 years old, then this visitor should be recognized as an senior.
 >
 > Another boundary is the application of discount. if the day is weekday, then the discount should not applied. If no complete group was formed, then the discount should also not applied. Otherwise the discount can be applied.
 >
 > The last boundary is the service fee.
 > First we should check the date type, if the date type is weekday and there are 2 visitors or less, then service_fee = 0.
-> If such condition can not be guaranteed, then we check the number of visitors. If there are 6 visitors or less, then the service_fee = (5 * visitor_num). Otherwise if there are 7 visitors or more, then the service_fee reaches its maximum of 30.
-> 
-> If the number of visitors <= 6, then the service fee is (visitor_num * 5). But if the number of visitors is 7 or more, then the service fee is capped at 30.
+> If such condition can not be guaranteed, then we check the number of visitors. If there are 6 visitors or less, then the service_fee = (5 * visitor_num). Otherwise the service_fee reaches its maximum of 30.
 
 - **Order:** the steps as a numbered list in plain sentences, not Python:
   what must happen first, and what can only be done after input ends?
