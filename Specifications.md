@@ -26,7 +26,43 @@ State what the program must do, in your own words, not the assignment's
 wording pasted back. Work through each part below:
 
 - **Logic:** what the program must do, rule by rule.
+
+> First, the program should read all the inputs. Since the number of visitors is not given, we should count them one by one.
+>
+> Then we need to optimize the price of the tickets. To do so, we first need to check how many groups can be formed. Because the group price is always cheaper than the adult price, we need to form as many groups as we can.
+>
+> After calculated the number of groups, we need to calculate the total price of the tickets. We caluculate this by applying group price, adult price and child price respectively, and consider the date(Weekday, Weekend or holiday) using mulitiple `if` sentences.
+>
+> Next, we need to add up discount. First, check whether discount can be applied (group_number >= 1, day = weekend or holiday), if possible, calculate the discount. REMEMBER using `float` type to store the number.
+>
+> Then, we need to calculate the service fee. We first let the service fee be (5 * visitor_num), then if the service fee is over 30, reset it to 30.
+>
+> At last we can get the final total cost = the total price of tickets - discount + service fee.
+
 - **Boundaries:** where exactly the behaviour changes as an input changes,
   and what happens on each side.
+
+> First boundary is the group formation. If the (adult_num % 5 == 0), then we can exactly form (adult_num // 5) group(s). However, if the (adult_num % 5 == 4), then 4 of the adults left can not form a new group, in other words, (adult_num // 5) groups can be formed.
+>
+> Second boundary is the age. If the age of a visitor is 12 years old, then this visitor should be recognized as a child. If a visitor is 13 years old or 59 years old, then this visitor should be recognized as an adult. If a visitor is 60 years old, then this visitor should be recognized as an senior.
+>
+> Another boundary is the application of discount. if the day is weekday, then the discount should not applied. If no complete group was formed, then the discount should also not applied. Otherwise the discount can be applied.
+>
+> The last boundary is the service fee. If the number of visitors <= 6, then the service fee is (visitor_num * 5). But if the number of visitors is 7 or more, then the service fee is capped at 30.
+
 - **Order:** the steps as a numbered list in plain sentences, not Python:
   what must happen first, and what can only be done after input ends?
+
+> 1. The input procedure should be first executed. As all the numbers can be calculated only after that. We use a while function, the loop exits only when the program reads -1.
+>
+> 2. In the while loop we need to count the number of visitorsm, since it is not given.
+>
+> 3. Next, we need to calculate the number of the groups.
+>
+> 4. Next, we need to calculate the original total ticket prices. First we create the `if` branches in order to distribute different date type. Next, in each branches, we calculate the total ticket prices by seperately calculate the total ticket prices of groups (if possible), adults, children and seniors.
+>
+> 5. Then we check if the discount can be applied.
+>
+> 6. Then we calculate the service fee. We use if branches to distribute whether the service fee should be 30 or less.
+>
+> 7. At last we organize all the variables and output the result.
