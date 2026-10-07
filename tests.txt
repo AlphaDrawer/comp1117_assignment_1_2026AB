@@ -90,7 +90,7 @@ Total people: 7
 Groups formed: 0
 Discount: 0.00
 Service fee: 30.00
-Total cost: 460.00
+Total cost: 490.00
 
 6
 60
@@ -179,8 +179,8 @@ Seniors: 0
 Total people: 2
 Groups formed: 0
 Discount: 0.00
-Service fee: 30.00
-Total cost: 160.00
+Service fee: 10.00
+Total cost: 210.00
 
 7
 -1
