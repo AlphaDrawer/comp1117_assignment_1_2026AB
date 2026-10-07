@@ -13,6 +13,7 @@
 # the steps is up to you.
 
 
+
 # ---- Output ----
 # Replace each ??? with the value you computed. Keep every label, space, and
 # the "{:.2f}" formatting exactly as shown — your output is compared exactly.

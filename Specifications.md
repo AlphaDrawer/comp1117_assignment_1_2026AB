@@ -59,11 +59,20 @@ wording pasted back. Work through each part below:
 
 > 1. The input procedure should be first executed. As all the numbers can be calculated only after that. We use a while function, the loop exits only when the program reads -1.
 >
-> 2. In the while loop we need to count the number of visitors, since it is not given.
+> 2. In the while loop we need to count the number of visitors, since it is not given. Also we need to calculate the number of adults, child and seniors in the loop since the use of lists is not allowed.
 >
 > 3. Next, we need to calculate the number of the groups.
 >
 > 4. Next, we need to calculate the original total ticket prices. First we create the `if` branches in order to distribute different date type. Next, in each branches, we calculate the total ticket prices by seperately calculate the total ticket prices of groups (if possible), adults, children and seniors.
+>
+> IF the day is weekday:
+>   Child price = 30, Adult price = 60, Senior price = 40, group price = 35
+>
+> IF the day is weekend:
+>   Child price = 40, Adult price = 80, Senior price = 50, group price = 65
+>
+> IF the day is holiday:
+>   Child price = 50, Adult price = 100, Senior price = 60, group price = 75
 >
 > 5. Then we check if the discount can be applied.
 >
