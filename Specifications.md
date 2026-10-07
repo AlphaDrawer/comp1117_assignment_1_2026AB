@@ -35,8 +35,8 @@ wording pasted back. Work through each part below:
 >
 > Next, we need to add up discount. First, check whether discount can be applied (group_number >= 1, day = weekend or holiday), if possible, calculate the discount. REMEMBER using `float` type to store the number.
 >
-> Then, we need to calculate the service fee. We first let the service fee be (5 * visitor_num), then if the service fee is over 30, reset it to 30.
->
+> Then, we need to calculate the service fee. We first check the day, if the day is weekday, then the service fee is 0. Then if there are 3 people or less, then the service fee is 0. Otherwise for each people there will be $5 service fee charged each, the maximum of the service fee is 30.
+> 
 > At last we can get the final total cost = the total price of tickets - discount + service fee.
 
 - **Boundaries:** where exactly the behaviour changes as an input changes,
@@ -48,14 +48,17 @@ wording pasted back. Work through each part below:
 >
 > Another boundary is the application of discount. if the day is weekday, then the discount should not applied. If no complete group was formed, then the discount should also not applied. Otherwise the discount can be applied.
 >
-> The last boundary is the service fee. If the number of visitors <= 6, then the service fee is (visitor_num * 5). But if the number of visitors is 7 or more, then the service fee is capped at 30.
+> The last boundary is the service fee.
+> First we should check the date type, if the date type is weekday, then service_fee = 0. Next we need check the number of the visitors. If there are 3 visitors or less, then the service_fee = 0. Else if there are 6 visitors or less, then the service_fee = (5 * visitor_num). Otherwise if there are 7 visitors or more, then the service_fee reaches its maximum of 30.
+> 
+> If the number of visitors <= 6, then the service fee is (visitor_num * 5). But if the number of visitors is 7 or more, then the service fee is capped at 30.
 
 - **Order:** the steps as a numbered list in plain sentences, not Python:
   what must happen first, and what can only be done after input ends?
 
 > 1. The input procedure should be first executed. As all the numbers can be calculated only after that. We use a while function, the loop exits only when the program reads -1.
 >
-> 2. In the while loop we need to count the number of visitorsm, since it is not given.
+> 2. In the while loop we need to count the number of visitors, since it is not given.
 >
 > 3. Next, we need to calculate the number of the groups.
 >
@@ -63,6 +66,6 @@ wording pasted back. Work through each part below:
 >
 > 5. Then we check if the discount can be applied.
 >
-> 6. Then we calculate the service fee. We use if branches to distribute whether the service fee should be 30 or less.
+> 6. Then we calculate the service fee. We use if branches to distribute whether the service fee should be 0 or 30 or less.
 >
 > 7. At last we organize all the variables and output the result.
