@@ -74,7 +74,7 @@ if group_num != 0 and day != "weekday":
 
 service = 0.0 # float type
 
-if not (day == "weekday" and visitor_num <= 3):
+if not (day == "weekday" and visitor_num < 3):
     service = visitor_num * 5.0
     if service >= 30.0:
         service = 30.0

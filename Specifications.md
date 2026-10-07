@@ -49,7 +49,7 @@ wording pasted back. Work through each part below:
 > Another boundary is the application of discount. if the day is weekday, then the discount should not applied. If no complete group was formed, then the discount should also not applied. Otherwise the discount can be applied.
 >
 > The last boundary is the service fee.
-> First we should check the date type, if the date type is weekday and there are 3 visitors or less, then service_fee = 0.
+> First we should check the date type, if the date type is weekday and there are 2 visitors or less, then service_fee = 0.
 > If such condition can not be guaranteed, then we check the number of visitors. If there are 6 visitors or less, then the service_fee = (5 * visitor_num). Otherwise if there are 7 visitors or more, then the service_fee reaches its maximum of 30.
 > 
 > If the number of visitors <= 6, then the service fee is (visitor_num * 5). But if the number of visitors is 7 or more, then the service fee is capped at 30.
