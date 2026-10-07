@@ -1,13 +1,189 @@
 1
-5
 30
+-1
+Day type: weekday
+Children: 0
+Adults: 1
+Seniors: 0
+Total people: 1
+Groups formed: 0
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+3
+3
+3
+5
+5
+13
+30
+30
+30
+59
+60
+-1
+Day type: weekday
+Children: 4
+Adults: 5
+Seniors: 1
+Total people: 10
+Groups formed: 1
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+2
+3
+34
+51
+5
+13
+30
+40
+-1
+Day type: weekday
+Children: 2
+Adults: 5
+Seniors: 0
+Total people: 7
+Groups formed: 0
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+
+5
+0
+30
+80
 -1
 Day type: weekday
 Children: 1
 Adults: 1
+Seniors: 1
+Total people: 3
+Groups formed: 0
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+6
+3
+60
+13
+20
+20
+30
+60
+-1
+Day type: weekend
+Children: 1
+Adults: 4
+Seniors: 2
+Total people: 7
+Groups formed: 0
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+6
+60
+18
+20
+20
+30
+59
+70
+10
+-1
+Day type: weekend
+Children: 1
+Adults: 5
+Seniors: 2
+Total people: 8
+Groups formed: 1
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+7
+30
+40
+50
+24
+35
+30
+40
+50
+24
+35
+30
+40
+50
+24
+35
+30
+40
+50
+24
+35
+Day type: weekend
+Children: 0
+Adults: 20
+Seniors: 0
+Total people: 20
+Groups formed: 4
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+
+8
+18
+20
+20
+30
+59
+10
+5
+6
+7
+1
+-1
+Day type: holiday
+Children: 5
+Adults: 5
+Seniors: 0
+Total people: 10
+Groups formed: 1
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
+
+
+8
+20
+40
+-1
+Day type: holiday
+Children: 0
+Adults: 2
 Seniors: 0
 Total people: 2
 Groups formed: 0
 Discount: 0.00
 Service fee: 0.00
-Total cost: 90.00
+Total cost: 60.00
+
+7
+-1
+Day type: holiday
+Children: 0
+Adults: 0
+Seniors: 0
+Total people: 0
+Groups formed: 0
+Discount: 0.00
+Service fee: 0.00
+Total cost: 60.00
