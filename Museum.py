@@ -92,3 +92,5 @@ print("Groups formed:", group_num)
 print("Discount:", "{:.2f}".format(discount))
 print("Service fee:", "{:.2f}".format(service))
 print("Total cost:", "{:.2f}".format(ticket_price - discount + service))
+
+# 1 2 3 4 5 6 7
